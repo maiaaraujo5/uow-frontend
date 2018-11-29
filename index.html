@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>University of Work</title>
+    <link rel="icon" href="publico/imagem/Logo/favicon.ico">
+	<!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="publico/external/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="publico/css/style.css">
+    <link rel="stylesheet" href="publico/css/extends.css">
+    
+    <!-- JS -->
+	<!-- ajax --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Fecha imports do Firebase -->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    
+    <div id="header" class="uow-nav"></div>
+
+    <div id="modal"></div>
+
+    <div class="uow-parallax" id="uow-id-bg-1" style="position: relative; height: 680px;">
+        <div class="container">
+            <div class="uow-center" style="width: 50%;">
+                <h4 class="uow-color-secondary">Descubra oportunidades pra você...</h4>
+                <nav>
+                    <div class="nav-wrapper uow-background-secondary">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="Digite um cargo, empresa ou localização" required>
+                                <label class="label-icon" for="search"><i class="material-icons" >search</i></label>
+                                <i class="material-icons" id="cleanSearch">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                <hr style="margin:30px 0px 30px">
+                <h5 class="uow-color-secondary" style="margin:0px 0px 20px">Sugestões para você</h5>
+                <div class="">
+                    <a class="waves-effect waves-light btn uow-btn-primary">Infraestrutura</a>
+                    <a class="waves-effect waves-light btn uow-btn-primary">Desenvolvimento</a>
+                    <a class="waves-effect waves-light btn uow-btn-primary">Banco de dados</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a id="question" class="btn-floating btn-large uow-btn-primary pulse">
+            <i class="large material-icons">question_answer</i>
+        </a>
+    </div>
+
+    <input type="radio" name="triggerChat" id="triggerChat">
+
+    <div class="uow-chat uow-chat-inactive" id="chat">
+        <div class="row">
+            <div class="col s12" style="width:400px">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row"> 
+                            <form class="col s12">
+                                <div class="row"  style="margin-bottom: 0px">
+                                    <div class="input-field col s12">
+                                        <input value="" id="nameAsk" type="text">
+                                        <label for="nameAsk">Nome</label>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 0px">
+                                    <div class="input-field col s12">
+                                        <input value="" id="emailAsk" type="text">
+                                        <label for="emailAsk">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 0px">
+                                    <div class="input-field col s12">
+                                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                        <label for="icon_prefix2">Mensagem</label>
+                                    </div>
+                                </div>
+                            </form>        
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn uow-btn-primary-type2" id="send">Enviar</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- modal -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal" style="max-width: 600px;">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12" style="position: relative">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Senha</label>
+                            <i class="material-icons uow-icon-input uow-icon-color-primary" id="visible-pass">visibility</i>
+                        </div>
+                    </div>
+                    <a class="waves-effect waves-light btn uow-btn-primary-type2 modal-close">Entrar</a>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="waves-effect waves-red btn-flat">Não possui conta? Cadastre-se aqui!</a>
+        </div>
+    </div>
+
+    <!-- jQuery --><script type="text/javascript" src="controller/js/jquery-3.3.1.min.js"></script>
+
+	<script defer src="publico/external/materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script defer src="publico/external/fontawesome-all.js" type="text/javascript"></script>
+    <script defer src="publico/external/html2canvas.min.js" type="text/javascript"></script>
+	<script defer src="publico/external/sweetalert.min.js" type="text/javascript"></script>	
+    <script defer src="controller/js/javascript.js" type="text/javascript"></script>	
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>University of Work</title>
+    <link rel="icon" href="../../publico/imagem/Logo/favicon.ico">
+	<!-- Fonte -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../publico/external/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../../publico/css/style.css">
+    <link rel="stylesheet" href="../../publico/css/extends.css">
+    
+    <!-- JS -->
+	<!-- ajax --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery --><script type="text/javascript" src="../../controller/js/jquery-3.3.1.min.js"></script>
+
+	<script defer src="../../publico/external/materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/fontawesome-all.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/html2canvas.min.js" type="text/javascript"></script>
+	<script defer src="../../publico/external/sweetalert.min.js" type="text/javascript"></script>	
+    <script defer src="../../controller/js/javascript.js" type="text/javascript"></script>	
+    <script defer src="../../controller/js/login.js" type="text/javascript"></script>	
+
+	<!-- Fecha imports do Firebase -->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    
+    <div id="header2"></div>    
+    
+    <div class="container" style="position: relative; height: 670px;">
+        <div class="uow-center" >
+            <div class="row">
+                <div class="col s12" style="width:620px">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title" style="font-size: 32px">Login</span>
+                            <p>Entre e desfrute dos serviços que o uow.com pode oferecer</p>
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="email" type="email" class="validate">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12" style="position: relative">
+                                            <input id="password" type="password" class="validate">
+                                            <label for="password">Senha</label>
+                                            <i class="material-icons uow-icon-input uow-icon-color-primary" id="visible-pass">visibility</i>
+                                        </div>
+                                    </div>
+                                    <a class="waves-effect waves-light btn uow-btn-primary-type2" id="open">Entrar</a>
+                                </form>
+                            </div>
+                        </div>                   
+                        <div class="card-action">
+                            <a href="/view/candidate/cadastro.html" class="">Não possui conta? Cadastre-se aqui!</a>
+                            <a href="#" class="">Esqueci minha senha =\</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>

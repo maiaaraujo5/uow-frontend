@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>University of Work</title>
+    <link rel="icon" href="../../publico/imagem/Logo/favicon.ico">
+	<!-- Fonte -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../publico/external/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../../publico/css/style.css">
+    <link rel="stylesheet" href="../../publico/css/extends.css">
+    
+    <!-- JS -->
+	<!-- ajax --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery --><script type="text/javascript" src="../../controller/js/jquery-3.3.1.min.js"></script>
+
+	<script defer src="../../publico/external/materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/fontawesome-all.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/html2canvas.min.js" type="text/javascript"></script>
+	<script defer src="../../publico/external/sweetalert.min.js" type="text/javascript"></script>	
+    <script defer src="../../controller/js/javascript.js" type="text/javascript"></script>	
+
+	<!-- Fecha imports do Firebase -->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    
+    <div id="header2"></div>    
+    
+    <div class="container">
+        <div class="container-fluid">
+            <img src="/publico/imagem/Partner/Capemisa/banner-site-capemisa_2.jpg" class="uow-banner-empresa">
+        </div>
+
+        <div class="uow-position-relative" style="margin-top: 15px;margin-bottom: 15px">
+            <div class="row" style="margin-bottom:0px;">
+                <div class="col s1">
+                    <img src="/publico/imagem/Partner/Capemisa/capemisa-quadrada.png" alt="" class="circle uow-img-perfil-empresa z-depth-2">
+                </div>
+                <div class="col s9 m9">
+                    <div class="row">
+                        <h5 style="margin-top:0px" id="nameCompany">Capemisa Seguradora</h5>
+                        <h6><i class="fas fa-star uow-color-star"></i><label class="tooltipped" data-position="right" data-tooltip="750 avaliações" style="margin-left:10px; font-size:20px">4.5</label></h6>
+                    </div>
+                </div>
+                <div class="col s2 m2">
+                    <button class="btn uow-btn-primary-pimary tooltipped" style="margin-top:20px; float: right" data-position="bottom" data-tooltip="Receba as novas oportunidades" value="follow" id="follow">Seguir</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#sobre">Sobre a empresa</a></li>
+                    <li class="tab col s3"><a href="#avaliacoes">Avaliações</a></li>
+                    <li class="tab col s3"><a href="#fotos">Fotos</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                </ul>
+            </div>
+            <div id="sobre" class="col s12">
+                <div class="row">
+                    <div class="col s8">
+                        <h3>Bilhete Premiável Capemisa</h3>
+                        <hr>
+                        <div class="video-container">
+                            <iframe width="853" height="480" src="//www.youtube.com/embed/AobVYa0yhSw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <h3>Porque trabalhar na Capemisa?</h3>
+                        <hr>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            <br><br>
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                        </p>
+                        <h3>Avaliações</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <div class="card-panel">
+                                    <h6>Classificação geral</h6>
+                                    <h5>
+                                        4.5
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star-half uow-color-star"></i>
+                                    </h5>
+                                    <small>Informações baseadas em 750 avaliações</small>
+                                    
+                                    <table class="">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 0px">
+                                                    <h6>
+                                                        5<i class="fas fa-star uow-color-star"></i>
+                                                    </h6>
+                                                </td>
+                                                <td style="width: 82%; padding: 0px">
+                                                    <div class="progress" style="margin-top: 22px">
+                                                        <div class="determinate" style="width: 90%"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px">
+                                                    <h6>
+                                                        4<i class="fas fa-star uow-color-star"></i>
+                                                    </h6>
+                                                </td>
+                                                <td style="padding: 0px">
+                                                    <div class="progress" style="margin-top: 22px">
+                                                        <div class="determinate" style="width: 20%"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px">
+                                                    <h6>
+                                                        3<i class="fas fa-star uow-color-star"></i>
+                                                    </h6>
+                                                </td>
+                                                <td style="padding: 0px">
+                                                    <div class="progress" style="margin-top: 22px">
+                                                        <div class="determinate" style="width: 70%"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px">
+                                                    <h6>
+                                                        2<i class="fas fa-star uow-color-star"></i>
+                                                    </h6>
+                                                </td>
+                                                <td style="padding: 0px">
+                                                    <div class="progress" style="margin-top: 22px">
+                                                        <div class="determinate" style="width: 40%"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 0px">
+                                                    <h6>
+                                                        1<i class="fas fa-star uow-color-star"></i>
+                                                    </h6>
+                                                </td>
+                                                <td style="padding: 0px">
+                                                    <div class="progress" style="margin-top: 22px">
+                                                        <div class="determinate" style="width: 10%"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                  
+                                </div>
+                            </div>
+                            <div class="col s6 m6">
+                                <div class="row" style="margin-bottom: 0px;">
+                                    <h6>Equilíbrio profissional</h6>
+                                    <h6>
+                                        4.5
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star-half uow-color-star"></i>
+                                    </h6>
+                                </div>
+                                <div class="row" style="margin-bottom: 0px;">
+                                    <h6>Ganhos</h6>
+                                    <h6>
+                                        3.5
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star-half uow-color-star"></i>
+                                    </h6>
+                                </div>
+                                <div class="row" style="margin-bottom: 0px;">
+                                    <h6>Gerência</h6>
+                                    <h6>
+                                        4.0
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                        <i class="fas fa-star uow-color-star"></i>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col s4">
+                        <ul class="collapsible" style="margin-top: 103px;">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                            </li>
+                        </ul>
+                        <div class="card-panel">
+                            <h5>Matriz</h5>
+                            <p>R. São Clemente, 38 - Botafogo, Rio de Janeiro - RJ, 22250-145</p> 
+                            <hr>
+                            <h5>Funcionários</h5>
+                            <p>Mais de 10.000</p>
+                            <hr>
+                            <h5>Links</h5>
+                            <p><a href="http://www.capemisa.com.br" target="_blank">Site Capemisa</a></p>
+                        </div>
+                        <div class="card-panel">
+                            <h5>Vagas visualizadas recentemente</h5>
+                            <p><a href="http://www.capemisa.com.br" target="_blank">Estágio em análise de sistemas</a></p>
+                            <small>Capemisa Seguradora - R. São Clemente, 38 - Botafogo</small>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="avaliacoes" class="col s12">
+                Test 2
+            </div>
+            <div id="fotos" class="col s12">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="row">
+                            <div class="col s12 m12">
+                              <div class="card-panel teal">
+                                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="row">
+                            <div class="col s12 m12">
+                              <div class="card-panel teal">
+                                <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="row">
+                            <div class="col s12 m12">
+                              <div class="card-panel teal">
+                                <img class="materialboxed" width="650" src="/publico/imagem/Partner/m4u.png" style="width:100%">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+
+    </div>
+
+
+    
+
+    <div id="footer"></div>
+
+</body>
+</html>

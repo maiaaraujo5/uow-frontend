@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>University of Work</title>
+    <link rel="icon" href="../../publico/imagem/Logo/favicon.ico">
+	<!-- Fonte -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../publico/external/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../../publico/css/style.css">
+    <link rel="stylesheet" href="../../publico/css/extends.css">
+    
+    <!-- JS -->
+	<!-- ajax --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jQuery --><script type="text/javascript" src="../../controller/js/jquery-3.3.1.min.js"></script>
+
+	<script defer src="../../publico/external/materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/fontawesome-all.js" type="text/javascript"></script>
+    <script defer src="../../publico/external/html2canvas.min.js" type="text/javascript"></script>
+	<script defer src="../../publico/external/sweetalert.min.js" type="text/javascript"></script>	
+    <script defer src="../../controller/js/javascript.js" type="text/javascript"></script>	
+    <script defer src="../../controller/js/empresas-contratando.js" type="text/javascript"></script>	
+
+	<!-- Fecha imports do Firebase -->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+    
+    <div id="header2"></div>    
+    
+    <div class="container" style="margin: 0px auto 50px; padding: 80px 0px">
+        <h3 class="uow-color-quaternary">Empresas com vagas abertas</h3>
+        <hr style="margin: 20px 0px 20px">
+        <div class="row" id="addPartner">
+            <!--um parceiro-->
+            <div class="col s3">
+                <div class="card" style="max-width: 300px; max-height: 356px; min-height: 356px">
+                    <div class="card-image">
+                        <img src="../../publico/imagem/Partner/coca-cola.jpg">
+                        <a href="/view/candidate/perfil-empresa.html" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Ver vagas"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!--um parceiro-->
+            <div class="col s3">
+                <div class="card" style="max-width: 300px; max-height: 356px; min-height: 356px">
+                    <div class="card-image">
+                        <img src="../../publico/imagem/Partner/capemisa.jpg">
+                        <a href="/view/candidate/perfil-empresa.html" class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Ver vagas"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    
+    <!-- modal -->
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal" style="max-width: 600px;">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12" style="position: relative">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Senha</label>
+                            <i class="material-icons uow-icon-input uow-icon-color-primary" id="visible-pass">visibility</i>
+                        </div>
+                    </div>
+                    <a class="waves-effect waves-light btn uow-btn-primary-type2 modal-close">Entrar</a>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="waves-effect waves-red btn-flat">Não possui conta? Cadastre-se aqui!</a>
+        </div>
+    </div>
+
+</body>
+</html>

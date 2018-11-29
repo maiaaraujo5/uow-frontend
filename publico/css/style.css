@@ -1,0 +1,274 @@
+/* css */
+
+html{
+    background: #eaeaea;
+    color: #5e5e5e;
+}
+
+/*font*/
+.uow-font-primary{
+    font-family: 'Bangers', cursive;
+}
+
+/*background*/
+.uow-background-primary{
+    background-color: #d93337 !important;
+}
+
+.uow-background-secondary{
+    background-color: #fff;
+}
+
+.uow-background-tertiary{
+    background-color: #ee8c3a;
+}
+
+.uow-background-quaternary{
+    background-color: #5e5e5e;
+}
+
+/* .uow-background-primary-primary{
+    background-color: #d93337;
+} */
+
+.uow-background-whatsapp{
+    background-color: #25D366 !important;
+}
+
+.uow-background-messenger{
+    background-color: #0084ff !important;
+}
+
+.uow-background-twitter{
+    background-color: #55acee !important;
+}
+
+/*Color*/
+.uow-color-primary{
+    color: #d93337;
+}
+
+.uow-color-secondary{
+    color: #fff;
+}
+
+.uow-color-quaternary{
+    color: #5e5e5e;
+}
+
+.uow-color-star{
+    color: #ffb100;
+}
+
+/*button*/
+
+.uow-btn-primary{
+    background-color: #d93337;
+    border: 1px solid #d93337;
+    color: #fff;
+}
+
+.uow-btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid #d93337;
+    color: #fff;
+}
+
+.uow-btn-primary-type2{
+    background-color: #d93337;
+    border: 1px solid #d93337;
+    color: #fff;
+}
+
+.uow-btn-primary-type2:hover{
+    background-color: transparent;
+    border: 1px solid #d93337;
+    color: #d93337;
+}
+
+.uow-btn-secondary{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #d93337;
+}
+
+.uow-btn-secondary:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.uow-btn-secondary-transparent{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.uow-btn-secondary-transparent:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #d93337;
+}
+
+.uow-btn-primary-pimary{
+    background-color: #d93337;
+    border: 1px solid #d93337;
+    color: #fff;
+}
+
+.uow-btn-primary-pimary:hover{
+    background-color: transparent;
+    border: 1px solid #d93337;
+    color: #d93337;
+}
+
+.uow-btn-quaternary{
+    background-color: #5e5e5e;
+    border: 1px solid #5e5e5e;
+    color: #fff;
+}
+
+.uow-btn-quaternary:hover{
+    background-color: transparent;
+    border: 1px solid #5e5e5e;
+    color: #5e5e5e;
+}
+
+.uow-btn-share{
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+/*position*/
+
+.uow-position-relative{
+    position: relative;
+}
+
+.uow-position-absolute{
+    position: absolute;
+}
+
+/*Parallax*/
+
+.uow-parallax{
+    width: 100%;
+    /* Set a specific height */
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#uow-id-bg-1{
+    background-image:url("../imagem/Index/banner.png");
+}
+
+/*frame*/
+.uow-frame-logo{
+    max-width: 60px;
+    max-height: 60px;
+    margin-left: 50px;
+}
+
+.uow-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.uow-chat{
+    position: fixed;
+    transition: all .6s;
+}
+
+.uow-chat-active{
+    bottom: 0px;
+    right: 100px;
+    opacity: 1;
+}
+
+.uow-chat-inactive{
+    bottom: -630px;
+    right: 100px;
+    opacity: 0;
+}
+
+/*icon*/
+
+.uow-fotter-icon{
+    font-size: 20px;
+    margin-left: 10px;
+    transition: all .6s;
+}
+
+.uow-facebook:hover{
+    color: #3B5998;
+}
+
+.uow-youtube:hover{
+    color: #ff0000;
+}
+
+.uow-icon-input{
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+.uow-icon-color-primary{
+    transition: all .6s;
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.uow-icon-color-primary:hover{
+    color: #d93337;
+}
+
+.uow-icon-center{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+ .uow-position-icon{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 26px
+}
+
+/*Empresas Contratando*/
+
+.uow-banner-empresa{
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.uow-img-perfil-empresa{
+   width: 100%;
+   height: 100%;
+}
+
+/*Gallery*/
+
+.uow-card-gallery{
+    max-width:600px;
+    max-height:600px;
+    overflow: hidden;
+}
+
+/*Text*/
+
+.uow-text-destaque{
+    font-size: 16px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
